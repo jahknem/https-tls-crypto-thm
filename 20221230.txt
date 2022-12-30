@@ -1,0 +1,65 @@
+	* Zertifikate
+		* Signierung
+		* Prüfung
+		* Zertifikatsauthorität (Staat der Niederlande)
+		* Kritik
+	* Symmetrische Verschlüsselung
+		* authenticated encryption with associated data, kurz AEAD
+	* Schlüsselaustausch
+		* Perfect Forward Secrecy
+			* -> Algorithmen eingeschränkt:
+			*     Warum? 
+				* Wie wird gewährleistet, dass der Sessionkey nicht in Zukunft berechnet werden kann
+
+
+Protokoll:
+	* TLS-Handshake
+	* HTTP
+
+
+
+HTTPS
+TLS / SSL
+TCP / IP
+
+Meta: Jan
+
+Struktur der Präsentation:
+	* Title
+	* Inhaltsverzeichnis
+	* HTTPS - als HTTP Version die TLS nutzt [Jan]
+		* HTTP Paketarchitektur
+		* HTTPS Paketarchitektur
+		* Vergleich
+	* TLS was ist es? (wie werden Schutzziele eingehalten?)
+		* 
+	* Stack
+		* Vorbedingungen [Jens]
+			* Zertifikatsgenerierung der CA
+			* Zertifikatsgenerierung der Server (Ablaufdiagramm)
+			* Vorbedingungen auf den Clients
+		* Handshake [Matthias]
+			* PFS-Einhaltung ->
+			* Diffie Hellman (DH Schlüsselaustausch)
+			* Zertifikatsprüfung
+			* Cipher Suite Austausch -> Festlegung des symmetrischen Verschlüsselungsverfahren
+				* Change Suite Message
+				* Hash des Handshakes
+		* Kommunikation / Record Protocol [Jan]
+			* Erstellung der Records aus der Payload
+			* Verkapselung der Payloads in einen Record Header
+			* Kryptografische Transformation
+				* Anwendung der MACs
+				* Nutzung der entsprechenden Crypto Suite
+			* Übertragung
+
+
+
+
+
+
+
+
+
+
+
