@@ -39,27 +39,19 @@ Struktur der Präsentation:
 			* Zertifikatsgenerierung der Server (Ablaufdiagramm)
 			* Vorbedingungen auf den Clients
 		* Handshake [Matthias]
+			* Diffie Hellman (DH Schlüsselaustausch) [Jens]
 			* PFS-Einhaltung ->
-			* Diffie Hellman (DH Schlüsselaustausch)
 			* Zertifikatsprüfung
 			* Cipher Suite Austausch -> Festlegung des symmetrischen Verschlüsselungsverfahren
 				* Change Suite Message
 				* Hash des Handshakes
 		* Kommunikation / Record Protocol [Jan]
+			* Cipher Suite
 			* Erstellung der Records aus der Payload
 			* Verkapselung der Payloads in einen Record Header
 			* Kryptografische Transformation
 				* Anwendung der MACs
 				* Nutzung der entsprechenden Crypto Suite
 			* Übertragung
-
-
-
-
-
-
-
-
-
-
-
+			* https://www.a10networks.com/glossary/key-differences-between-tls-1-2-and-tls-1-3/
+			
